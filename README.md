@@ -32,3 +32,18 @@ has to be published first, which is a decision for you:
 - Plain ES5 only, because Tizen 3.0 ships an old Chromium. No CSS grid or CSS variables.
 - The SmartThings API allows browser calls (CORS `*`), so no proxy is needed.
 - Not yet tested on the actual TV.
+
+## Credits and acknowledgements
+- **[TizenBrew](https://github.com/reisxd/TizenBrew)** by reisxd and contributors: the module system this
+  app runs inside. This project only follows TizenBrew's documented
+  [application module format](https://github.com/reisxd/TizenBrew/blob/main/docs/MODULES.md); no TizenBrew code is copied.
+- **[TizenBrewInstaller](https://github.com/reisxd/TizenBrewInstaller)** by reisxd: used to get TizenBrew onto the TV.
+- **[TizenTube](https://github.com/reisxd/TizenTube)** by reisxd and
+  **[jellyfin-tizen](https://github.com/GlenLowland/jellyfin-tizen-npm-publish)**: example modules that show how
+  site-mod and application modules are structured.
+- **SmartThings** and its public REST API belong to Samsung / SmartThings. This app uses that API with your own
+  token; it is not made or endorsed by Samsung.
+- **Tizen** is an operating system from Samsung and the Linux Foundation, and the TV runs Samsung's Tizen platform.
+- Code written with the help of Claude (Anthropic) and published by havocpsi-cpu.
+
+All product names are trademarks of their owners. This is an unofficial, independent project.
