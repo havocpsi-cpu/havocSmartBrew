@@ -1,4 +1,4 @@
-# SmartThings for TizenBrew
+# havocSmartBrew
 
 A small SmartThings dashboard for older Samsung TVs (written for Tizen 3.0, e.g. UN58MU6100).
 It is a TizenBrew **application module**: a plain web page, not installed on the TV itself.
@@ -24,9 +24,9 @@ Serve the `app/` folder with any static server and open `index.html?demo=1`.
 ## Install on the TV
 TizenBrew installs application modules from npm or from GitHub (`user/repo`). So the module
 has to be published first, which is a decision for you:
-1. Push this folder to a GitHub repo (or publish to npm).
-2. On the TV, open TizenBrew, then Module Manager, then Install from GitHub, and enter `user/repo`.
-3. Launch "SmartThings" from TizenBrew and enter your token.
+1. This repo is on GitHub: `havocpsi-cpu/havocSmartBrew`.
+2. On the TV, open TizenBrew, then Module Manager, then Install from GitHub, and enter `havocpsi-cpu/havocSmartBrew`.
+3. Launch "havocSmartBrew" from TizenBrew and enter your token.
 
 ## Compatibility notes
 - Plain ES5 only, because Tizen 3.0 ships an old Chromium. No CSS grid or CSS variables.

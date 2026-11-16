@@ -1,6 +1,6 @@
 {
-  "name": "tizenbrew-smartthings",
-  "appName": "SmartThings",
+  "name": "havocsmartbrew",
+  "appName": "havocSmartBrew",
   "version": "0.1.0",
   "description": "Simple SmartThings dashboard for older Samsung Tizen TVs, packaged as a TizenBrew application module.",
   "packageType": "app",
