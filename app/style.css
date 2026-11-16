@@ -1,0 +1,45 @@
+/* Written for Tizen 3.0 (old Chromium): no CSS grid, no CSS variables, no gap. */
+html, body { margin: 0; padding: 0; width: 1920px; height: 1080px; overflow: hidden;
+  background: #101820; color: #eef2f5; font-family: Arial, Helvetica, sans-serif; }
+
+.hidden { display: none; }
+
+#header { height: 110px; padding: 0 80px; position: relative; }
+#title { font-size: 52px; line-height: 110px; font-weight: bold; }
+#status { position: absolute; right: 80px; top: 0; line-height: 110px; font-size: 28px; color: #8ea2b3; }
+
+#setup { padding: 20px 80px; }
+#setup h2 { font-size: 44px; margin: 0 0 20px 0; }
+#setup p { font-size: 28px; color: #b6c3cf; line-height: 1.4; max-width: 1500px; }
+#tokenInput { width: 1100px; font-size: 34px; padding: 18px 20px; margin: 20px 0; border: 4px solid #3a4a5a;
+  background: #1b2733; color: #fff; border-radius: 10px; }
+#tokenInput:focus { border-color: #3fa7ff; outline: none; }
+.row { margin-top: 10px; }
+.error { color: #ff7a7a; }
+
+#dashboard { padding: 0 80px; height: 800px; overflow: hidden; position: relative; }
+#dashboard h3 { font-size: 34px; margin: 10px 0 14px 0; color: #8ea2b3; font-weight: normal; }
+.grid { overflow: hidden; }
+
+.btn, .tile { box-sizing: border-box; display: inline-block; vertical-align: top;
+  background: #1b2733; border: 4px solid #1b2733; border-radius: 14px; }
+.btn { padding: 22px 40px; font-size: 32px; margin-right: 24px; }
+
+.tile { width: 400px; height: 170px; margin: 0 24px 24px 0; padding: 20px 24px; position: relative; }
+.tile .name { font-size: 32px; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tile .info { font-size: 26px; color: #9fb2c2; margin-top: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tile .state { position: absolute; left: 24px; bottom: 18px; font-size: 38px; font-weight: bold; }
+.tile.on { background: #1f4d36; border-color: #1f4d36; }
+.tile.on .state { color: #7dffb0; }
+.tile.off .state { color: #7f8e9b; }
+.tile.readonly .state { color: #cfd9e2; font-size: 34px; }
+.tile.scene { background: #2b2f55; border-color: #2b2f55; height: 120px; width: 400px; }
+.tile.scene .name { margin-top: 24px; }
+.tile.busy { opacity: 0.55; }
+
+.btn.focus, .tile.focus { border-color: #3fa7ff; background-color: #234a6d; }
+.tile.on.focus { background-color: #2a6a49; }
+
+#empty { font-size: 32px; color: #8ea2b3; padding: 20px 0; }
+#footer { position: absolute; bottom: 0; left: 0; right: 0; height: 70px; line-height: 70px; text-align: center;
+  font-size: 24px; color: #6f8294; background: #0b1117; }

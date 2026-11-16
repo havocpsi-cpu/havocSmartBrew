@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SmartThings</title>
+<meta name="viewport" content="width=1920, height=1080">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="header">
+  <div id="title">SmartThings</div>
+  <div id="status"></div>
+</div>
+
+<!-- Token setup screen -->
+<div id="setup" class="hidden">
+  <h2>Connect your SmartThings account</h2>
+  <p>Create a token at <b>account.smartthings.com/tokens</b> with the permissions
+     <b>Devices (list, see, control)</b> and <b>Scenes (list, see, execute)</b>, then enter it below.</p>
+  <input id="tokenInput" type="text" autocomplete="off" placeholder="Paste or type your token">
+  <div class="row">
+    <div id="btnSave" class="btn" tabindex="0">Save and connect</div>
+    <div id="btnDemo" class="btn" tabindex="0">Try demo mode</div>
+  </div>
+  <p id="setupError" class="error"></p>
+</div>
+
+<!-- Dashboard -->
+<div id="dashboard" class="hidden">
+  <h3 id="scenesHeading" class="hidden">Scenes</h3>
+  <div id="scenes" class="grid"></div>
+  <h3>Devices</h3>
+  <div id="devices" class="grid"></div>
+  <div id="empty" class="hidden">No devices found.</div>
+</div>
+
+<div id="footer">
+  Arrows: move &nbsp; OK: toggle / run &nbsp; Red: refresh &nbsp; Yellow: change token &nbsp; Back: exit
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
